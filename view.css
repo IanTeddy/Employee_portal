@@ -1,0 +1,159 @@
+* {
+	margin:0; padding:0; 		
+  height: auto;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(67, 65, 65);
+  
+} 
+body {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 120px;
+  box-sizing: border-box;
+}
+
+
+#navbar {
+  color: rgb(13, 26, 38);
+  display: flex;
+  justify-content: left;
+  height: 50px;
+  line-height: 50px;
+  padding: 1vw;
+}
+
+.nav-wrapper {
+  /* margin: auto; */
+  text-align: center;
+  width: 70%;
+} 
+
+
+#navbar ul {
+  display: block;
+  float: left;
+  list-style: none;
+  margin-top: -2px;
+  text-align: right;
+} 
+
+#navbar li {
+  display: inline-block;
+}
+
+#navbar li a {
+  color:rgb(30, 127, 191);
+  display: block;
+  font-size: 1em;
+  height: 50px;
+  letter-spacing: 1px;
+  margin: 0 20px;
+  padding: 0 4px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#navbar li a:hover {
+  color: rgb(19, 79, 119);
+}
+
+/* Animated Bottom Line */
+#navbar li a:before, #navbar li a:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: -1px;
+  background: rgb(30, 127, 191);
+}
+
+#navbar li a:before {
+  left: 0;
+  transition: 0.5s;
+}
+
+#navbar li a:after {
+  background: rgb(13, 26, 38);
+  right: 0;
+}
+
+#navbar li a:hover:before {
+  background: rgb(13, 26, 38);
+  width: 100%;
+  transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
+}
+
+#navbar li a:hover:after {
+  background: transparent;
+  width: 100%;
+}
+
+.logo {
+  float: left;
+  margin:0  10px;
+  /* width:1.5em; */
+} 
+
+.logo img {
+  width: 4.5em ;
+  height: auto ;
+}
+
+
+h1 {
+  padding: 0.5em 0 ;
+  text-shadow: 1px 1px rgb(137, 137, 137);
+}
+
+.container {
+  display: block;
+  text-align: center;
+  padding: 2vw 7vw;
+}
+
+/* Style table */
+table {
+  background-color: rgba(255, 255, 255,0.9);
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+}
+
+th {
+  font-weight: bold;
+}
+
+td, th {
+  border: 1px solid #2D5070;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color:#F0D4A8;
+}
+
+
+/* Style the footer */
+footer {
+  background-color:#2D5070;
+  color: #fff;
+  padding: 2vw 2vw;
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+/* Center the footer content */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  font-size: small;
+}
